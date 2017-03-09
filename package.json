@@ -10,7 +10,7 @@
     "watch": "gulp watch",
     "build": "gulp build",
     "coverage": "gulp coverage",
-    "start": "babel-node examples/index.js"
+    "start": "./node_modules/casperjs/bin/casperjs examples/index.js"
   },
   "repository": {
     "type": "git",
