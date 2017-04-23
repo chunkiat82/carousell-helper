@@ -13,7 +13,7 @@ function run() {
     casper.thenOpen('https://carousell.com/login/?next=' + url, function () {
         this.fillSelectors('form.login-form', {
             'input[name="username"]': username,
-            'input[name="pass"]': password,
+            'input[name="password"]': password,
         }, true);
     });
     casper.wait(3000, function () {
@@ -27,5 +27,5 @@ function run() {
     });
 
     casper.run();
-} 
+}
 run();
