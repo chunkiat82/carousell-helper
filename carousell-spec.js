@@ -1,7 +1,7 @@
 var accounts = require('./accounts.json');
 var carousell = require('./carousell.json');
 
-describe('angularjs homepage todo list', function() {
+describe('Carousell Helper to Like Page', function() {
 
   Object.keys(accounts).forEach(function(account){
     it('should add a todo', function() {
