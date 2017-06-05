@@ -1,13 +1,11 @@
 var accounts = require('./accounts.json');
 var carousell = require('./carousell.json');
 
-describe('Carousell Helper to Like Page', function () {
+Object.keys(accounts).forEach(function (account) {
 
-  beforeEach(function () {
-      jasmine.DEFAULT_TIMEOUT_INTERVAL = 20000;
-  });
+  jasmine.DEFAULT_TIMEOUT_INTERVAL = 30000;
+  describe('Carousell Helper to Like Page', function () {
 
-  Object.keys(accounts).forEach(function (account) {
     it('should add a todo', function () {
 
       var usernameString = account;
